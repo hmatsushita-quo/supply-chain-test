@@ -11,3 +11,5 @@ jobs:
         # bot-id なし（匿名モード、ブロックのみ）
 
       - run: yarn install
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
