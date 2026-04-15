@@ -1,0 +1,19 @@
+name: workflow-swf.yml
+on: workflow_dispatch
+
+jobs:
+  job-id:
+    # Socket Firewall supports Linux, Windows, and macOS
+    runs-on: ubuntu-latest
+    steps:
+      # add Socket Firewall to the runner environment
+      - uses: socketdev/action@v1
+        with:
+          mode: firewall
+
+      # setup your project (e.g. checkout, setup-node, etc...)
+      - uses: actions/checkout@v5
+
+      # example usage
+      - run: sfw yarn install
+      - run: sfw yarn add lodash
