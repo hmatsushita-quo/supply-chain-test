@@ -9,6 +9,7 @@
     "audit": "yarn audit"
   },
   "dependencies": {
+    "lodahs": "0.0.1-security",
     "lodash": "4.17.20",
     "minimist": "1.2.5",
     "axios": "0.21.0",

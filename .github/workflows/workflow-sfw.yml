@@ -16,4 +16,3 @@ jobs:
 
       # example usage
       - run: sfw yarn install
-      - run: sfw yarn add lodash
