@@ -15,5 +15,4 @@ jobs:
       - uses: actions/checkout@v5
 
       # example usage
-      - run: sfw yarn install
-      - run: sfw yarn add lodash
+      - run: echo "Attack"
